@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1> Hola , <%= @correox %></h1>
+    <p>
+      <h3>
+        <% if @htmlformato %>
+            Usted descargue su documento desde el siguiente vinculo: 
+            <a href='localhost:3000/<%= @nombre_archivo %>.<%= @xformato %> ' > <%= @nombre_archivo %>.<%= @xformato %>   </a>  </h3>
+        <% else %>
+            No se a podido encontrar su documento. Contacte al telefono: 
+              <a href='tel:56021528'> 56021528  </a>  </h3>
+        <% end %>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>Saludos.</p>
+  </body>
+</html>
